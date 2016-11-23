@@ -1,0 +1,33 @@
+module.exports = {
+  entry: './src/index.jsx',
+  module: {
+    loaders: [
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        loader: 'babel'
+      },
+      {
+        test: /\.ipynb$/,
+        exclude: /node_modules/,
+        loader: 'html!ipynb?cellsOnly=true'
+      },
+      {
+        test: /\.css$/,
+        loader: 'style!css'
+      },
+      {
+        test: /\.styl$/,
+        loader: 'style!css!stylus'
+      }
+    ]
+  },
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
+  output: {
+    path: __dirname + '/dist',
+    publicPath: '/',
+    filename: 'bundle.js'
+  }
+}

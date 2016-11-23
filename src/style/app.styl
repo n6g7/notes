@@ -1,0 +1,62 @@
+aside()
+  margin-right: 5px
+  position: absolute
+  right: 100%
+
+.hack main
+  header
+    align-items: center
+    background: #f6f6f6
+    display: flex
+    flex-flow: row nowrap
+    height: 3em
+    justify-content: flex-start
+    padding: 0
+    text-transform: lowercase
+
+    h1
+      margin: 0 2em
+      padding: 0
+
+      &::after
+        content: none
+
+    nav ul
+      margin: 0
+
+      li
+        display: inline-block
+        margin-right: 10px
+
+  article
+    margin-top: 2em
+
+    .cell
+      h1, h2, h3, h4, h5, h6
+        .anchor-link
+          opacity: 0
+          transition: .5
+
+        &:hover .anchor-link
+          opacity: 1
+
+        &::before
+          aside()
+
+      &.code_cell
+        .input
+          position: relative
+
+          .prompt.input_prompt
+            aside()
+            top: 2rem
+
+          .input_area pre
+            background: #fbfbfb
+
+        .output
+          position: relative
+
+          .prompt.output_prompt
+            aside()
+            top: 2rem
