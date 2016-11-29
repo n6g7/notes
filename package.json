@@ -4,7 +4,7 @@
   "description": "notebook collection",
   "author": "Nathan <nathan@gnab.fr>",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack-dashboard -- webpack-dev-server --config webpack.config.dev"
   },
   "repository": {
     "type": "git",
@@ -28,11 +28,13 @@
     "babel-preset-react": "^6.16.0",
     "css-loader": "^0.26.0",
     "html-loader": "^0.4.4",
-    "ipynb-loader": "0.0.1",
+    "ipynb-loader": "0.0.2",
     "style-loader": "^0.13.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^2.3.1",
-    "webpack": "^1.13.3"
+    "webpack": "^1.13.3",
+    "webpack-dashboard": "^0.2.0",
+    "webpack-dev-server": "^1.16.2"
   },
   "babel": {
     "presets": [
