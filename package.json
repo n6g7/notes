@@ -4,6 +4,7 @@
   "description": "notebook collection",
   "author": "Nathan <nathan@gnab.fr>",
   "scripts": {
+    "build": "webpack",
     "dev": "webpack-dashboard -- webpack-dev-server --config webpack.config.dev"
   },
   "repository": {
