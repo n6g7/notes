@@ -5,6 +5,7 @@
   "author": "Nathan <nathan@gnab.fr>",
   "scripts": {
     "build": "webpack",
+    "deploy": "aws s3 sync ./dist s3://notes.gnab.fr",
     "dev": "webpack-dashboard -- webpack-dev-server --config webpack.config.dev"
   },
   "repository": {
