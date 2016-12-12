@@ -43,16 +43,21 @@ aside()
         &::before
           aside()
 
+      p img
+        display: block
+        margin: auto
+
       &.code_cell
         .input
           position: relative
 
           .prompt.input_prompt
             aside()
-            top: 2rem
+            top: 1rem
 
           .input_area pre
             background: #fbfbfb
+            padding: 1rem
 
         .output
           position: relative

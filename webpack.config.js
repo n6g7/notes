@@ -19,6 +19,10 @@ module.exports = {
       {
         test: /\.styl$/,
         loader: 'style!css!stylus'
+      },
+      {
+        test: /\.png$/,
+        loader: 'url!img'
       }
     ]
   },
