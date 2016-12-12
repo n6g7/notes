@@ -5,8 +5,8 @@
   "author": "Nathan <nathan@gnab.fr>",
   "scripts": {
     "build": "webpack",
-    "deploy": "aws s3 sync ./dist s3://notes.gnab.fr",
-    "dev": "webpack-dashboard -- webpack-dev-server --config webpack.config.dev"
+    "dev": "webpack-dashboard -- webpack-dev-server --config webpack.config.dev",
+    "test": "eslint src/"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,8 @@
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
     "css-loader": "^0.26.0",
+    "eslint": "^3.12.0",
+    "eslint-plugin-react": "^6.8.0",
     "html-loader": "^0.4.4",
     "img-loader": "^1.3.1",
     "ipynb-loader": "0.0.2",
@@ -43,6 +45,28 @@
   "babel": {
     "presets": [
       "es2015",
+      "react"
+    ]
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
+    "globals": {
+      "MathJax": true
+    },
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
+    "plugins": [
       "react"
     ]
   }

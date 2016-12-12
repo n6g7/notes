@@ -1,0 +1,17 @@
+machine:
+  node:
+    version: 6.1.0
+  python:
+    version: 3.5.2
+
+dependencies:
+  pre:
+    - pip3 install --upgrade pip
+    - pip3 install jupyter
+
+deployment:
+  prod:
+    branch: master
+    commands:
+      - npm run build
+      - aws s3 sync ./dist s3://notes.gnab.fr --delete
