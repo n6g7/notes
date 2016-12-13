@@ -21,7 +21,7 @@ module.exports = {
         loader: 'style!css!stylus'
       },
       {
-        test: /\.png$/,
+        test: /\.(png|svg)$/,
         loader: 'url!img'
       }
     ]

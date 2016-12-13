@@ -21,12 +21,33 @@ aside()
       &::after
         content: none
 
-    nav ul
-      margin: 0
+    nav
+      align-items: center
+      display: flex
+      flex-flow: row nowrap
+      flex-grow: 1
+      justify-content: space-between
 
-      li
-        display: inline-block
-        margin-right: 10px
+      ul
+        margin: 0
+
+        li
+          display: inline-block
+          margin-right: 10px
+
+      aside
+        margin-right: 1rem
+
+        a
+          border: none
+          opacity: 0.2
+
+          &:hover
+            background: none
+            opacity: 1
+
+          img
+            height: 1.5rem
 
   article
     margin-top: 2em

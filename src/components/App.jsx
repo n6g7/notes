@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import { Link } from 'react-router';
 
+import githubIcon from '../images/github.svg';
 import notebooks from '../../notebooks';
 
 class App extends PureComponent
@@ -17,6 +18,11 @@ class App extends PureComponent
               </li>
             )}
           </ul>
+          <aside>
+            <a href="https://github.com/n6g7/notes" title="GitHub repository" target="blank">
+              <img src={githubIcon} alt="GitHub" />
+            </a>
+          </aside>
         </nav>
       </header>
       <article className="container">
