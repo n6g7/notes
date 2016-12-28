@@ -9,7 +9,9 @@ class App extends PureComponent
   render() {
     return <main>
       <header>
-        <h1>notes</h1>
+        <h1>
+          <Link to="/">notes</Link>
+        </h1>
         <nav>
           <ul>
             { Object.keys(notebooks).map(name =>
