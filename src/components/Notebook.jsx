@@ -20,4 +20,8 @@ class Notebook extends PureComponent
   }
 }
 
+Notebook.PropTypes = {
+  routeParams: React.PropTypes.object.isRequired
+};
+
 export default Notebook;

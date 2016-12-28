@@ -34,4 +34,8 @@ class App extends PureComponent
   }
 }
 
+App.PropTypes = {
+  children: React.PropTypes.element.isRequired
+};
+
 export default App;
