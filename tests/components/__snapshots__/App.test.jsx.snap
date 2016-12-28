@@ -1,0 +1,50 @@
+exports[`App renders a well formed component 1`] = `
+<main>
+  <header>
+    <h1>
+      <a
+        onClick={[Function]}
+        style={Object {}}>
+        notes
+      </a>
+    </h1>
+    <nav>
+      <ul>
+        <li>
+          <a
+            onClick={[Function]}
+            style={Object {}}>
+            bertrand
+          </a>
+        </li>
+        <li>
+          <a
+            onClick={[Function]}
+            style={Object {}}>
+            secretary
+          </a>
+        </li>
+        <li>
+          <a
+            onClick={[Function]}
+            style={Object {}}>
+            simulation
+          </a>
+        </li>
+      </ul>
+      <aside>
+        <a
+          href="https://github.com/n6g7/notes"
+          target="blank"
+          title="GitHub repository">
+          <img
+            alt="GitHub"
+            src={Object {}} />
+        </a>
+      </aside>
+    </nav>
+  </header>
+  <article
+    className="container" />
+</main>
+`;

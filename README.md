@@ -8,8 +8,8 @@ Notebooks collection
   `npm i`
   `pip install jupyter`
 - run? `npm run dev`
+- test? `npm test`
 - build? `npm run build`
-- deploy? `npm run deploy`
 
 ## Uses
 
