@@ -3,6 +3,21 @@ aside()
   position: absolute
   right: 100%
 
+prompt()
+  aside()
+  opacity: 0.6
+  top: 1rem
+
+cell(bgColor)
+  position: relative
+
+  .prompt
+    prompt()
+
+  pre
+    background: bgColor
+    padding: 1rem
+
 .hack main
   header
     align-items: center
@@ -70,22 +85,11 @@ aside()
 
       &.code_cell
         .input
-          position: relative
-
-          .prompt.input_prompt
-            aside()
-            top: 1rem
-
-          .input_area pre
-            background: #fbfbfb
-            padding: 1rem
+          cell(#fbfbfb)
 
         .output
-          position: relative
+          cell(#ffffff)
 
-          .prompt.output_prompt
-            aside()
-            top: 1rem
-
-          .output_area pre
-            padding: 1rem
+        .input + .output_wrapper pre
+            border-top: 0
+            margin-top: -21px
