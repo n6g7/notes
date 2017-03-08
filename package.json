@@ -5,6 +5,7 @@
   "author": "Nathan <nathan@gnab.fr>",
   "scripts": {
     "build": "webpack",
+    "deploy": "yarn build && firebase deploy",
     "dev": "webpack-dashboard -- webpack-dev-server --config webpack.config.dev",
     "test": "eslint src tests && jest"
   },

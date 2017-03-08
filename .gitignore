@@ -6,3 +6,4 @@ dist/*
 !dist/favicon*
 
 .ipynb_checkpoints
+.firebaserc

@@ -5,11 +5,11 @@ Notebooks collection
 ## How to
 
 - install?
-  `npm i`
+  `yarn i`
   `pip install jupyter`
-- run? `npm run dev`
-- test? `npm test`
-- build? `npm run build`
+- run? `yarn dev`
+- test? `yarn test`
+- deploy? `yarn deploy`
 
 ## Uses
 
