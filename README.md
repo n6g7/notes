@@ -22,3 +22,4 @@ Notebooks collection
 
 - [ ] Existential risk
 - [ ] Fermi's paradox
+- [ ] Law of accelerating returns
