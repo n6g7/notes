@@ -1,8 +1,5 @@
 exports[`Notebook renders a well formed component 1`] = `
-<div
-  dangerouslySetInnerHTML={
-    Object {
-      "__html": undefined,
-    }
-  } />
+<p>
+  Loading...
+</p>
 `;

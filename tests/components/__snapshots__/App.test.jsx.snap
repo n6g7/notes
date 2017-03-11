@@ -1,14 +1,14 @@
 exports[`App renders a well formed component 1`] = `
 <main>
   <header>
-    <h1>
-      <a
-        onClick={[Function]}
-        style={Object {}}>
-        notes
-      </a>
-    </h1>
     <nav>
+      <h1>
+        <a
+          onClick={[Function]}
+          style={Object {}}>
+          notes
+        </a>
+      </h1>
       <ul>
         <li>
           <a
@@ -32,17 +32,17 @@ exports[`App renders a well formed component 1`] = `
           </a>
         </li>
       </ul>
-      <aside>
-        <a
-          href="https://github.com/n6g7/notes"
-          target="blank"
-          title="GitHub repository">
-          <img
-            alt="GitHub"
-            src={Object {}} />
-        </a>
-      </aside>
     </nav>
+    <aside>
+      <a
+        href="https://github.com/n6g7/notes"
+        target="blank"
+        title="GitHub repository">
+        <img
+          alt="GitHub"
+          src={Object {}} />
+      </a>
+    </aside>
   </header>
   <article
     className="container" />

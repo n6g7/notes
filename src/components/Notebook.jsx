@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 
 import runMathjax from '../service/mathjax';
+import notebook from '../service/notebook';
 import notebooks from '../../notebooks';
 
 class Notebook extends PureComponent
@@ -17,11 +18,11 @@ class Notebook extends PureComponent
   update() {
     runMathjax();
 
-    const notebook = notebooks[this.props.routeParams.notebook];
+    const notebookPath = notebooks[this.props.routeParams.notebook];
 
     this.setState({ loading: true });
-    fetch(`/${notebook}`)
-    .then(res => res.text())
+
+    notebook.load(notebookPath)
     .then(html => this.setState({
       loading: false,
       html
