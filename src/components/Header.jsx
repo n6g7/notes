@@ -8,10 +8,10 @@ class Header extends PureComponent
 {
   render() {
     return <header>
-      <h1>
-        <Link to="/">notes</Link>
-      </h1>
       <nav>
+        <h1>
+          <Link to="/">notes</Link>
+        </h1>
         <ul>
           { Object.keys(notebooks).map(name =>
             <li key={`nb-${name}`}>
@@ -19,12 +19,12 @@ class Header extends PureComponent
             </li>
           )}
         </ul>
-        <aside>
-          <a href="https://github.com/n6g7/notes" title="GitHub repository" target="blank">
-            <img src={githubIcon} alt="GitHub" />
-          </a>
-        </aside>
       </nav>
+      <aside>
+        <a href="https://github.com/n6g7/notes" title="GitHub repository" target="blank">
+          <img src={githubIcon} alt="GitHub" />
+        </a>
+      </aside>
     </header>;
   }
 }

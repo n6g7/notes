@@ -20,59 +20,61 @@ cell(bgColor)
 
 .hack main
   header
+    height = 3rem
+    spacing = 2rem
+
     align-items: center
     background: #f6f6f6
     display: flex
     flex-flow: row nowrap
-    height: 3em
-    justify-content: flex-start
-    padding: 0
+    justify-content: space-between
+    line-height: height
+    padding: 0 spacing
     text-transform: lowercase
-
-    h1
-      margin: 0 2em
-      padding: 0
-
-      &::after
-        content: none
-
-      a
-        color: inherit
-        border: 0
-
-        &:hover
-          background: inherit
 
     nav
       align-items: center
       display: flex
       flex-flow: row nowrap
-      flex-grow: 1
-      justify-content: space-between
+
+      h1
+        line-height: inherit
+        margin-right: spacing
+        padding: 0
+
+        &::after
+          content: none
+
+        a
+          color: inherit
+          border: 0
+
+          &:hover
+            background: inherit
 
       ul
+        display: flex
+        flex-flow: row nowrap
         margin: 0
 
         li
           display: inline-block
           margin-right: 10px
 
-      aside
-        margin-right: 1rem
+    aside
+      a
+        border: none
+        opacity: 0.2
 
-        a
-          border: none
-          opacity: 0.2
+        &:hover
+          background: none
+          opacity: 1
 
-          &:hover
-            background: none
-            opacity: 1
-
-          img
-            height: 1.5rem
+        img
+          height: 1.5rem
 
   article
-    margin-top: 2em
+    margin-top: 2rem
 
     .cell
       h1, h2, h3, h4, h5, h6
@@ -100,3 +102,22 @@ cell(bgColor)
         .input + .output_wrapper pre
             border-top: 0
             margin-top: -21px
+
+@media (max-width: 840px)
+  .hack main
+    article .cell
+      h2, h3, h4, h5, h6
+        &::before
+          margin: 0
+          position: static
+
+      img
+        max-width: 100%
+
+@media (max-width: 500px)
+  .hack main
+    header nav
+      ul
+        flex-flow: column
+        line-height: 1.5rem
+        margin: 1rem 0
