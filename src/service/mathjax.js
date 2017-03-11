@@ -16,6 +16,9 @@ MathJax.Hub.Config({
 
 export default function runMathjax() {
   if (window.MathJax) {
-    MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    MathJax.Hub.Queue(
+      ["resetEquationNumbers", MathJax.InputJax.TeX],
+      ["Typeset", MathJax.Hub]
+    );
   }
 }

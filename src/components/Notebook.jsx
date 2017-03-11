@@ -16,8 +16,6 @@ class Notebook extends PureComponent
   }
 
   update() {
-    runMathjax();
-
     const notebookPath = notebooks[this.props.routeParams.notebook];
 
     this.setState({ loading: true });
@@ -26,7 +24,8 @@ class Notebook extends PureComponent
     .then(html => this.setState({
       loading: false,
       html
-    }));
+    }))
+    .then(() => runMathjax());
   }
 
   componentDidMount() {
