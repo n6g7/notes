@@ -5,23 +5,48 @@ import notebooks from '../../notebooks';
 
 class Notebook extends PureComponent
 {
-  componentDidMount() {
-    runMathjax();
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      loading: true,
+      html: null,
+    };
   }
 
-  componentDidUpdate() {
+  update() {
     runMathjax();
+
+    const notebook = notebooks[this.props.routeParams.notebook];
+
+    this.setState({ loading: true });
+    fetch(`/${notebook}`)
+    .then(res => res.text())
+    .then(html => this.setState({
+      loading: false,
+      html
+    }));
+  }
+
+  componentDidMount() {
+    this.update();
+  }
+
+  componentDidUpdate(prevProps) {
+    if (prevProps.routeParams.notebook !== this.props.routeParams.notebook) {
+      this.update();
+    }
   }
 
   render() {
-    const notebook = notebooks[this.props.routeParams.notebook];
-
-    return <div dangerouslySetInnerHTML={{__html: notebook}} />;
+    return this.state.loading
+      ? <p>Loading...</p>
+      : <div dangerouslySetInnerHTML={{__html: this.state.html}} />;
   }
 }
 
 Notebook.PropTypes = {
-  routeParams: React.PropTypes.object.isRequired
+  routeParams: React.PropTypes.object.isRequired,
 };
 
 export default Notebook;

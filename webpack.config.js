@@ -10,7 +10,7 @@ module.exports = {
       {
         test: /\.ipynb$/,
         exclude: /node_modules/,
-        loader: 'html!ipynb?cellsOnly=true'
+        loader: 'file!extract!html!ipynb?cellsOnly=true'
       },
       {
         test: /\.css$/,
