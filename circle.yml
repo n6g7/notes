@@ -13,5 +13,5 @@ deployment:
   prod:
     branch: master
     commands:
-      - npm run build
-      - aws s3 sync ./dist s3://notes.gnab.fr --delete
+      - yarn build
+      - yarn deploy -- --token=$FIREBASE_TOKEN --non-interactive

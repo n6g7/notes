@@ -9,6 +9,7 @@ Notebooks collection
   `pip install jupyter`
 - run? `yarn dev`
 - test? `yarn test`
+- build? `yarn build`
 - deploy? `yarn deploy`
 
 ## Uses
