@@ -13,5 +13,6 @@ deployment:
   prod:
     branch: master
     commands:
+      - npm install -g firebase-tools
       - yarn build
-      - yarn deploy -- --token=$FIREBASE_TOKEN --non-interactive
+      - yarn deploy -- --token=$FIREBASE_TOKEN --project $FIREBASE_PROJECT --non-interactive
