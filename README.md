@@ -21,6 +21,6 @@ Notebooks collection
 
 ## To-do
 
+- [X] Law of accelerating returns
 - [ ] Existential risk
 - [ ] Fermi's paradox
-- [ ] Law of accelerating returns

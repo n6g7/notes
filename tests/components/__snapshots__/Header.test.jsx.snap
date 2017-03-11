@@ -13,6 +13,13 @@ exports[`Header renders a well formed component 1`] = `
         <a
           onClick={[Function]}
           style={Object {}}>
+          accelerating-returns
+        </a>
+      </li>
+      <li>
+        <a
+          onClick={[Function]}
+          style={Object {}}>
           bertrand
         </a>
       </li>
