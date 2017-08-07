@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import { Link } from 'react-router'
 
-import notebooks from '../../notebooks'
+import notebooks from '@notebooks'
 
 class Summary extends PureComponent {
   render () {

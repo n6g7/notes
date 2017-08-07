@@ -1,8 +1,8 @@
 import React, { PureComponent } from 'react'
 
-import runMathjax from '../service/mathjax'
-import notebook from '../service/notebook'
-import notebooks from '../../notebooks'
+import runMathjax from '@services/mathjax'
+import notebook from '@services/notebook'
+import notebooks from '@notebooks'
 
 class Notebook extends PureComponent {
   constructor (props) {

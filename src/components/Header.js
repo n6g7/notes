@@ -1,8 +1,8 @@
 import React, { PureComponent } from 'react'
 import { Link } from 'react-router'
 
-import githubIcon from '../images/github.svg'
-import notebooks from '../../notebooks'
+import githubIcon from '@images/github.svg'
+import notebooks from '@notebooks'
 
 class Header extends PureComponent {
   render () {

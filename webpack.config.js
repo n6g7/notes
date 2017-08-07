@@ -1,38 +1,65 @@
 const path = require('path')
 
 module.exports = {
-  entry: './src/index.jsx',
+  context: path.resolve(__dirname, 'src'),
+  entry: './index.js',
+  output: {
+    path: path.join(__dirname, 'dist'),
+    publicPath: '/',
+    filename: 'bundle.js'
+  },
+  resolve: {
+    alias: {
+      '@images': path.resolve(__dirname, 'src/images'),
+      '@notebooks': path.resolve(__dirname, 'notebooks'),
+      '@services': path.resolve(__dirname, 'src/services')
+    }
+  },
   module: {
-    loaders: [
+    rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel'
+        use: [
+          'babel-loader'
+        ]
       },
       {
         test: /\.ipynb$/,
         exclude: /node_modules/,
-        loader: 'file!extract!html!ipynb?cellsOnly=true'
+        use: [
+          'file-loader',
+          'extract-loader',
+          'html-loader',
+          'ipynb-loader?cellsOnly=true'
+        ]
       },
       {
         test: /\.css$/,
-        loader: 'style!css'
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
       },
       {
         test: /\.styl$/,
-        loader: 'style!css!stylus'
+        use: [
+          'style-loader',
+          'css-loader',
+          'stylus-loader'
+        ]
       },
       {
         test: /\.(png|svg)$/,
-        loader: 'url!img'
+        use: [
+          'url-loader',
+          'img-loader'
+        ]
       }
     ]
   },
-  resolve: {
-    extensions: ['', '.js', '.jsx']
-  },
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+  devServer: {
+    contentBase: './dist',
+    historyApiFallback: true
   }
 }

@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack",
     "deploy": "firebase deploy",
-    "dev": "webpack-dashboard -- webpack-dev-server --config webpack.config.dev",
+    "dev": "webpack-dashboard -- webpack-dev-server",
     "pretest": "standard",
     "test": "jest"
   },
@@ -44,9 +44,9 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^2.3.1",
     "url-loader": "^0.5.7",
-    "webpack": "^1.13.3",
-    "webpack-dashboard": "^0.2.0",
-    "webpack-dev-server": "^1.16.2"
+    "webpack": "^3.4.1",
+    "webpack-dashboard": "^0.4.0",
+    "webpack-dev-server": "^2.6.1"
   },
   "babel": {
     "presets": [
