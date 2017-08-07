@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 
-import Header from './Header.jsx'
+import Header from './Header'
 
 class App extends PureComponent {
   render () {

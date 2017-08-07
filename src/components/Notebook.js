@@ -16,6 +16,7 @@ class Notebook extends PureComponent {
 
   update () {
     const notebookPath = notebooks[this.props.routeParams.notebook]
+    console.log(notebookPath)
 
     this.setState({ loading: true })
 
