@@ -1,16 +1,15 @@
-import React, { PureComponent } from 'react';
-import { Link } from 'react-router';
+import React, { PureComponent } from 'react'
+import { Link } from 'react-router'
 
-import githubIcon from '../images/github.svg';
-import notebooks from '../../notebooks';
+import githubIcon from '../images/github.svg'
+import notebooks from '../../notebooks'
 
-class Header extends PureComponent
-{
-  render() {
+class Header extends PureComponent {
+  render () {
     return <header>
       <nav>
         <h1>
-          <Link to="/">notes</Link>
+          <Link to='/'>notes</Link>
         </h1>
         <ul>
           { Object.keys(notebooks).map(name =>
@@ -21,12 +20,12 @@ class Header extends PureComponent
         </ul>
       </nav>
       <aside>
-        <a href="https://github.com/n6g7/notes" title="GitHub repository" target="blank">
-          <img src={githubIcon} alt="GitHub" />
+        <a href='https://github.com/n6g7/notes' title='GitHub repository' target='blank'>
+          <img src={githubIcon} alt='GitHub' />
         </a>
       </aside>
-    </header>;
+    </header>
   }
 }
 
-export default Header;
+export default Header

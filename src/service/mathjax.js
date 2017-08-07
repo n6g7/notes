@@ -1,24 +1,24 @@
-MathJax.Hub.Config({
+window.MathJax.Hub.Config({
   displayAlign: 'center',
   TeX: {
     equationNumbers: {
-      autoNumber: "all",
+      autoNumber: 'all',
       useLabelIds: true
     }
   },
   tex2jax: {
-    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+    displayMath: [ ['$$', '$$'], ['\\[', '\\]'] ],
     processEscapes: true,
     processEnvironments: true
   }
-});
+})
 
-export default function runMathjax() {
+export default function runMathjax () {
   if (window.MathJax) {
-    MathJax.Hub.Queue(
-      ["resetEquationNumbers", MathJax.InputJax.TeX],
-      ["Typeset", MathJax.Hub]
-    );
+    window.MathJax.Hub.Queue(
+      ['resetEquationNumbers', window.MathJax.InputJax.TeX],
+      ['Typeset', window.MathJax.Hub]
+    )
   }
 }

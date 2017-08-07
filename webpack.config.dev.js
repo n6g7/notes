@@ -1,6 +1,6 @@
-const DashboardPlugin = require('webpack-dashboard/plugin');
+const DashboardPlugin = require('webpack-dashboard/plugin')
 
-const baseConfig = require('./webpack.config');
+const baseConfig = require('./webpack.config')
 
 module.exports = Object.assign(
   {},
@@ -13,4 +13,4 @@ module.exports = Object.assign(
       contentBase: './dist'
     }
   }
-);
+)

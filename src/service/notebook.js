@@ -1,6 +1,6 @@
 export default {
-  load(filename) {
-    return fetch(`/${filename}`)
-    .then(res => res.text());
+  load (filename) {
+    return window.fetch(`/${filename}`)
+    .then(res => res.text())
   }
 }

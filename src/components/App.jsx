@@ -1,21 +1,20 @@
-import React, { PureComponent } from 'react';
+import React, { PureComponent } from 'react'
 
-import Header from './Header.jsx';
+import Header from './Header.jsx'
 
-class App extends PureComponent
-{
-  render() {
+class App extends PureComponent {
+  render () {
     return <main>
       <Header />
-      <article className="container">
+      <article className='container'>
         {this.props.children}
       </article>
-    </main>;
+    </main>
   }
 }
 
 App.PropTypes = {
   children: React.PropTypes.element.isRequired
-};
+}
 
-export default App;
+export default App

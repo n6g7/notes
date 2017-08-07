@@ -3,4 +3,4 @@ window.MathJax = {
     Config: () => null,
     Queue: () => null
   }
-};
+}

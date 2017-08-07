@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   entry: './src/index.jsx',
   module: {
@@ -30,7 +32,7 @@ module.exports = {
     extensions: ['', '.js', '.jsx']
   },
   output: {
-    path: __dirname + '/dist',
+    path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   }
 }
