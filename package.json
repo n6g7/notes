@@ -4,7 +4,7 @@
   "description": "notebook collection",
   "author": "Nathan <nathan@gnab.fr>",
   "scripts": {
-    "build": "webpack",
+    "build": "NODE_ENV=production webpack -p",
     "deploy": "firebase deploy",
     "dev": "webpack-dashboard -- webpack-dev-server",
     "pretest": "standard",
