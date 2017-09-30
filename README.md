@@ -1,5 +1,7 @@
 # Notes
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/n6g7/notes.svg)](https://greenkeeper.io/)
+
 Notebooks collection
 
 ## How to
