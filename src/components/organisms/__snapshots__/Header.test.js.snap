@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> renders well 1`] = `
+<styled.header>
+  <styled.nav>
+    <h1>
+      <Link
+        replace={false}
+        to="/"
+      >
+        notes
+      </Link>
+    </h1>
+    <ul>
+      <li
+        key="nb-accelerating-returns"
+      >
+        <Link
+          replace={false}
+          to="/nb/accelerating-returns"
+        >
+          accelerating-returns
+        </Link>
+      </li>
+      <li
+        key="nb-bertrand"
+      >
+        <Link
+          replace={false}
+          to="/nb/bertrand"
+        >
+          bertrand
+        </Link>
+      </li>
+      <li
+        key="nb-secretary"
+      >
+        <Link
+          replace={false}
+          to="/nb/secretary"
+        >
+          secretary
+        </Link>
+      </li>
+      <li
+        key="nb-simulation"
+      >
+        <Link
+          replace={false}
+          to="/nb/simulation"
+        >
+          simulation
+        </Link>
+      </li>
+    </ul>
+  </styled.nav>
+  <styled.aside>
+    <a
+      href="https://github.com/n6g7/notes"
+      target="blank"
+      title="GitHub repository"
+    >
+      <img
+        alt="GitHub"
+        src={Object {}}
+      />
+    </a>
+  </styled.aside>
+</styled.header>
+`;

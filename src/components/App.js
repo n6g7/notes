@@ -1,20 +1,15 @@
 import React, { PureComponent } from 'react'
+import { Switch, Route } from 'react-router-dom'
 
-import Header from './Header'
+import { Notebook, Summary } from '@pages'
 
 class App extends PureComponent {
   render () {
-    return <main>
-      <Header />
-      <article className='container'>
-        {this.props.children}
-      </article>
-    </main>
+    return <Switch>
+      <Route exact path='/' component={Summary} />
+      <Route path='/nb/:notebook' component={Notebook} />
+    </Switch>
   }
-}
-
-App.PropTypes = {
-  children: React.PropTypes.element.isRequired
 }
 
 export default App

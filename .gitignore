@@ -1,9 +1,7 @@
-node_modules
-npm-debug.log
-
+.ipynb_checkpoints
+.firebaserc
+coverage
 dist/*
 !dist/index.html
 !dist/favicon*
-
-.ipynb_checkpoints
-.firebaserc
+node_modules

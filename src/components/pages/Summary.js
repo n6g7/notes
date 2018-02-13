@@ -1,11 +1,12 @@
 import React, { PureComponent } from 'react'
-import { Link } from 'react-router'
+import { Link } from 'react-router-dom'
 
 import notebooks from '@notebooks'
+import { Page } from '@templates'
 
 class Summary extends PureComponent {
   render () {
-    return <div>
+    return <Page>
       <h1>summary</h1>
       <ul>
         { Object.keys(notebooks).map(notebook =>
@@ -14,7 +15,7 @@ class Summary extends PureComponent {
           </li>
         ) }
       </ul>
-    </div>
+    </Page>
   }
 }
 

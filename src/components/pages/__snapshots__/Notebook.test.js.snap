@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Notebook /> renders well 1`] = `
+<Styled(Page)>
+  <p>
+    Loading...
+  </p>
+</Styled(Page)>
+`;

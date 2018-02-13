@@ -1,0 +1,87 @@
+{
+  "React component": {
+    "prefix": "comp",
+    "body": [
+      "import React, { PureComponent } from 'react'",
+      "import PropTypes from 'prop-types'",
+      "",
+      "class ${1:Component} extends PureComponent {",
+      "  static propTypes = {}",
+      "",
+      "  render () {",
+      "    return $2",
+      "  }",
+      "}",
+      "$0"
+    ],
+    "description": "React pure component"
+  },
+  "React component test": {
+    "prefix": "comptest",
+    "body": [
+      "import React from 'react'",
+      "import { shallow } from 'enzyme'",
+      "",
+      "import ${1:Component} from './${1:Component}'",
+      "",
+      "describe('<${1:Component} />', () => {",
+      "  it('renders well', () => {",
+      "    const wrapper = shallow(<${1:Component} />)",
+      "    expect(wrapper).toMatchSnapshot()",
+      "  })",
+      "})"
+    ],
+    "description": "React component test"
+  },
+  "Saga test": {
+    "prefix": "sagatest",
+    "body": [
+      "import { call, put, takeLatest } from 'redux-saga/effects'",
+      "",
+      "import { ${1:saga} } from './${2:saga}'",
+      "",
+      "describe('${1:saga}', () => {",
+      "  it('works', () => {",
+      "    const saga = ${1:saga}()",
+      "",
+      "    expect(saga.next()).toEqual({",
+      "      done: false,",
+      "      value: ${3:call(api)}",
+      "    })",
+      "",
+      "    expect(saga.next()).toEqual({",
+      "      done: false,",
+      "      value: ${4:put(apiSuccess())}",
+      "    })",
+      "",
+      "    expect(saga.next()).toEqual({",
+      "      done: true,",
+      "      value: undefined",
+      "    })",
+      "  })",
+      "",
+      "  it('handles errors', () => {",
+      "    const saga = ${1:saga}()",
+      "    const error = 'meeeh'",
+      "",
+      "    expect(saga.next()).toEqual({",
+      "      done: false,",
+      "      value: ${3:call(api)}",
+      "    })",
+      "",
+      "    expect(saga.throw(error)).toEqual({",
+      "      done: false,",
+      "      value: ${5:put(apiFailure(error))}",
+      "    })",
+      "",
+      "    expect(saga.next()).toEqual({",
+      "      done: true,",
+      "      value: undefined",
+      "    })",
+      "  })",
+      "})"
+    ],
+    "description": "Saga test"
+  }
+}
+

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Page /> renders well 1`] = `
+<styled.main>
+  <Header />
+  <styled.article>
+    <p>
+      Hi!
+    </p>
+  </styled.article>
+</styled.main>
+`;

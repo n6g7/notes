@@ -1,24 +1,34 @@
 const path = require('path')
+const Dotenv = require('dotenv-webpack')
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
-  entry: './index.js',
-  output: {
-    path: path.join(__dirname, 'dist'),
-    publicPath: '/',
-    filename: 'bundle.js'
-  },
+  entry: [
+    'babel-polyfill',
+    'react-hot-loader/patch',
+    './index.js'
+  ],
   resolve: {
     alias: {
-      '@images': path.resolve(__dirname, 'src/images'),
+      '@assets': path.resolve(__dirname, 'src/assets'),
+      '@atoms': path.resolve(__dirname, 'src/components/atoms'),
+      '@molecules': path.resolve(__dirname, 'src/components/molecules'),
       '@notebooks': path.resolve(__dirname, 'notebooks'),
-      '@services': path.resolve(__dirname, 'src/services')
+      '@organisms': path.resolve(__dirname, 'src/components/organisms'),
+      '@pages': path.resolve(__dirname, 'src/components/pages'),
+      '@services': path.resolve(__dirname, 'src/services'),
+      '@templates': path.resolve(__dirname, 'src/components/templates')
     }
+  },
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/',
+    filename: 'bundle.js'
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: [
           'babel-loader'
@@ -26,7 +36,6 @@ module.exports = {
       },
       {
         test: /\.ipynb$/,
-        exclude: /node_modules/,
         use: [
           'file-loader',
           'extract-loader',
@@ -42,15 +51,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.styl$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'stylus-loader'
-        ]
-      },
-      {
-        test: /\.(png|svg)$/,
+        test: /\.(svg|png|jpe?g|gif)$/,
         use: [
           'url-loader',
           'img-loader'
@@ -58,8 +59,7 @@ module.exports = {
       }
     ]
   },
-  devServer: {
-    contentBase: './dist',
-    historyApiFallback: true
-  }
+  plugins: [
+    new Dotenv()
+  ]
 }

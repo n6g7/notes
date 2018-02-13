@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Summary /> renders well 1`] = `
+<Page>
+  <h1>
+    summary
+  </h1>
+  <ul>
+    <li
+      key="summary-accelerating-returns"
+    >
+      <Link
+        replace={false}
+        to="/nb/accelerating-returns"
+      >
+        accelerating-returns
+      </Link>
+    </li>
+    <li
+      key="summary-bertrand"
+    >
+      <Link
+        replace={false}
+        to="/nb/bertrand"
+      >
+        bertrand
+      </Link>
+    </li>
+    <li
+      key="summary-secretary"
+    >
+      <Link
+        replace={false}
+        to="/nb/secretary"
+      >
+        secretary
+      </Link>
+    </li>
+    <li
+      key="summary-simulation"
+    >
+      <Link
+        replace={false}
+        to="/nb/simulation"
+      >
+        simulation
+      </Link>
+    </li>
+  </ul>
+</Page>
+`;
