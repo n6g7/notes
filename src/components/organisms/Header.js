@@ -8,6 +8,7 @@ import notebooks from '@notebooks'
 const Container = styled.header`
   align-items: center;
   background: ${p => p.theme.colours.grey};
+  border-bottom: 1px solid #D9DCDF;
   display: flex;
   flex-flow: row nowrap;
   height: 3rem;
