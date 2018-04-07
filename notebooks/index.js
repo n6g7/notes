@@ -1,11 +1,6 @@
-import acceleratingReturns from './accelerating-returns.ipynb'
-import bertrand from './bertrand.ipynb'
-import secretary from './secretary.ipynb'
-import simulation from './simulation.ipynb'
-
 export default {
-  'accelerating-returns': acceleratingReturns,
-  bertrand,
-  secretary,
-  simulation
+  'accelerating-returns': () => import(/* webpackChunkName: "accelerating-returns" */ './accelerating-returns.ipynb'),
+  'bertrand': () => import(/* webpackChunkName: "bertrand" */ './bertrand.ipynb'),
+  'secretary': () => import(/* webpackChunkName: "secretary" */ './secretary.ipynb'),
+  'simulation': () => import(/* webpackChunkName: "simulation" */ './simulation.ipynb')
 }

@@ -37,8 +37,6 @@ module.exports = {
       {
         test: /\.ipynb$/,
         use: [
-          'file-loader',
-          'extract-loader',
           'html-loader',
           'ipynb-loader?cellsOnly=true'
         ]

@@ -4,7 +4,6 @@ import styled from 'styled-components'
 
 import notebooks from '@notebooks'
 import runMathjax from '@services/mathjax'
-import notebook from '@services/notebook'
 import { Page } from '@templates'
 
 const NotebookPage = styled(Page)`
@@ -87,12 +86,10 @@ class Notebook extends PureComponent {
   }
 
   update () {
-    const notebookPath = notebooks[this.props.match.params.notebook]
-
     this.setState({ loading: true })
 
-    notebook.load(notebookPath)
-      .then(html => this.setState({
+    notebooks[this.props.match.params.notebook]()
+      .then(({ default: html }) => this.setState({
         loading: false,
         html
       }))
@@ -110,10 +107,12 @@ class Notebook extends PureComponent {
   }
 
   render () {
+    const { html, loading } = this.state
+
     return <NotebookPage>
-      { this.state.loading
+      { loading
         ? <p>Loading...</p>
-        : <div dangerouslySetInnerHTML={{__html: this.state.html}} />
+        : <div dangerouslySetInnerHTML={{__html: html}} />
       }
     </NotebookPage>
   }
