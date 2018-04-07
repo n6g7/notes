@@ -35,8 +35,10 @@ class Page extends PureComponent {
   }
 
   renderFooter () {
-    const commit = process.env.CIRCLE_SHA1 || 'dev'
-    const url = process.env.CIRCLE_COMPARE_URL || 'http://localhost:8080'
+    const building = process.env.CIRCLE_JOB === 'deploy'
+
+    const commit = building ? process.env.CIRCLE_SHA1 : 'dev'
+    const url = building ? process.env.CIRCLE_COMPARE_URL : 'http://localhost:8080'
 
     return <Footer>
       <a href={url}>{commit}</a>
