@@ -16,7 +16,7 @@
     "dev": "webpack-dev-server --config webpack.dev.config.js --mode development",
     "pretest": "standard",
     "test": "jest",
-    "write": "cd notebooks && jupyter notebook"
+    "write": "cd notebooks && pipenv run jupyter notebook"
   },
   "bugs": {
     "url": "https://github.com/n6g7/notes/issues"
