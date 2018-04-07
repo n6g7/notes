@@ -92,11 +92,11 @@ class Notebook extends PureComponent {
     this.setState({ loading: true })
 
     notebook.load(notebookPath)
-    .then(html => this.setState({
-      loading: false,
-      html
-    }))
-    .then(() => runMathjax())
+      .then(html => this.setState({
+        loading: false,
+        html
+      }))
+      .then(() => runMathjax())
   }
 
   componentDidMount () {
