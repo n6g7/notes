@@ -19,9 +19,28 @@ const Article = styled.article`
   }
 `
 
+const Footer = styled.footer`
+  font-size: 0.9rem;
+  margin: 1rem 0;
+  opacity: 0.3;
+
+  a {
+    color: inherit;
+  }
+`
+
 class Page extends PureComponent {
   static propTypes = {
     children: PropTypes.node.isRequired
+  }
+
+  renderFooter () {
+    const commit = process.env.CIRCLE_SHA1 || 'dev'
+    const url = process.env.CIRCLE_COMPARE_URL || 'http://localhost:8080'
+
+    return <Footer>
+      <a href={url}>{commit}</a>
+    </Footer>
   }
 
   render () {
@@ -30,6 +49,7 @@ class Page extends PureComponent {
       <Article>
         {this.props.children}
       </Article>
+      {this.renderFooter()}
     </Main>
   }
 }
