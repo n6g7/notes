@@ -52,6 +52,16 @@ exports[`<Header /> renders well 1`] = `
           simulation
         </Link>
       </li>
+      <li
+        key="nb-star-death"
+      >
+        <Link
+          replace={false}
+          to="/nb/star-death"
+        >
+          star-death
+        </Link>
+      </li>
     </ul>
   </styled.nav>
   <styled.aside>

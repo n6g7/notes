@@ -46,6 +46,16 @@ exports[`<Summary /> renders well 1`] = `
         simulation
       </Link>
     </li>
+    <li
+      key="summary-star-death"
+    >
+      <Link
+        replace={false}
+        to="/nb/star-death"
+      >
+        star-death
+      </Link>
+    </li>
   </ul>
 </Page>
 `;
