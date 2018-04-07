@@ -5,6 +5,13 @@
   "presets": [
     "env",
     "react",
-    "stage-2",
-  ]
+    "stage-2"
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        "dynamic-import-node"
+      ]
+    }
+  }
 }

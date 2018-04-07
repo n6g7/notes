@@ -8,5 +8,12 @@ exports[`<Page /> renders well 1`] = `
       Hi!
     </p>
   </styled.article>
+  <styled.footer>
+    <a
+      href="http://localhost:8080"
+    >
+      dev
+    </a>
+  </styled.footer>
 </styled.main>
 `;

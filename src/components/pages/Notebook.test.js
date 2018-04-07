@@ -7,7 +7,7 @@ describe('<Notebook />', () => {
   it('renders well', () => {
     const match = {
       params: {
-        notebook: 123
+        notebook: 'bertrand'
       }
     }
     const wrapper = shallow(<Notebook match={match} />)
