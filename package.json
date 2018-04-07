@@ -21,11 +21,11 @@
     "url": "https://github.com/n6g7/notes/issues"
   },
   "dependencies": {
-    "prop-types": "^15.6.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
     "react-router-dom": "^4.2.2",
-    "styled-components": "^3.1.6"
+    "styled-components": "^3.2.5"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
