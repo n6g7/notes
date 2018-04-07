@@ -38,7 +38,9 @@ class Page extends PureComponent {
     const building = process.env.CIRCLE_JOB === 'deploy'
 
     const commit = building ? process.env.CIRCLE_SHA1.substring(0, 6) : 'dev'
-    const url = building ? `${process.env.CIRCLE_REPOSITORY_URL}/tree/${process.env.CIRCLE_SHA1}` : 'http://localhost:8080'
+    const url = building
+      ? `https://github.com/${process.env.CIRCLE_PROJECT_USERNAME}/${process.env.CIRCLE_PROJECT_REPONAME}/tree/${process.env.CIRCLE_SHA1}`
+      : 'http://localhost:8080'
 
     return <Footer>
       <a href={url}>{commit}</a>
