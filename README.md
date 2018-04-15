@@ -1,5 +1,7 @@
 # Notes
 
+[![CircleCI](https://circleci.com/gh/n6g7/notes.svg?style=svg)](https://circleci.com/gh/n6g7/notes)
+[![Known Vulnerabilities](https://snyk.io/test/github/n6g7/notes/badge.svg)](https://snyk.io/test/github/n6g7/notes)
 [![Greenkeeper badge](https://badges.greenkeeper.io/n6g7/notes.svg)](https://greenkeeper.io/)
 
 Notebooks collection
