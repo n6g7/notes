@@ -43,7 +43,7 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.3",
     "html-loader": "^0.5.5",
-    "img-loader": "^2.0.1",
+    "img-loader": "^3.0.1",
     "ipynb-loader": "^0.0.2",
     "jest": "^22.4.3",
     "react-hot-loader": "^4.0.1",
