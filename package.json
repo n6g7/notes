@@ -12,7 +12,6 @@
   },
   "scripts": {
     "build": "webpack --mode production",
-    "deploy": "firebase deploy",
     "dev": "webpack-dev-server --config webpack.dev.config.js --mode development",
     "now-build": "yarn build",
     "pretest": "standard",
