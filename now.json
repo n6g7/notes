@@ -5,7 +5,10 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@now/static-build"
+      "use": "static-build-with-pip",
+      "config": {
+        "packages": ["jupyter"]
+      }
     }
   ]
 }
