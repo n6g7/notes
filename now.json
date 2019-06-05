@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "name": "notes",
+  "alias": "notes.gnab.fr",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build"
+    }
+  ]
+}
