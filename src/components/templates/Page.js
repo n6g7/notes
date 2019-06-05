@@ -35,11 +35,11 @@ class Page extends PureComponent {
   }
 
   renderFooter () {
-    const building = process.env.CIRCLE_JOB === 'deploy'
+    const building = !!process.env.NOW_GITHUB_DEPLOYMENT
 
-    const commit = building ? process.env.CIRCLE_SHA1.substring(0, 6) : 'dev'
+    const commit = building ? process.env.NOW_GITHUB_COMMIT_SHA.substring(0, 6) : 'dev'
     const url = building
-      ? `https://github.com/${process.env.CIRCLE_PROJECT_USERNAME}/${process.env.CIRCLE_PROJECT_REPONAME}/tree/${process.env.CIRCLE_SHA1}`
+      ? `https://github.com/${process.env.NOW_GITHUB_ORG}/${process.env.NOW_GITHUB_REPO}/tree/${process.env.NOW_GITHUB_COMMIT_SHA}`
       : 'http://localhost:8080'
 
     return <Footer>
