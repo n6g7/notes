@@ -1,7 +1,7 @@
 version: 2
 
 jobs:
-  build:
+  test:
     working_directory: ~/notes
 
     docker:
@@ -22,20 +22,8 @@ jobs:
           command: yarn
 
       - run:
-          name: Install global dependencies
-          command: yarn global add greenkeeper-lockfile
-
-      - run:
-          name: Update lockfile with greenkeeper
-          command: greenkeeper-lockfile-update
-
-      - run:
           name: Run tests
           command: yarn test
-
-      - run:
-          name: Upload lockfile with greenkeeper
-          command: greenkeeper-lockfile-upload
 
       - save_cache:
           key: v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
@@ -44,51 +32,8 @@ jobs:
             - ~/.yarn
             - ~/notes/node_modules
 
-  deploy:
-    working_directory: ~/notes
-
-    docker:
-      - image: node:8
-
-    steps:
-      - checkout
-
-      - restore_cache:
-          keys:
-            - v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
-            - v1-{{ .Branch }}
-            - v1-master-{{ checksum "yarn.lock" }}
-            - v1-master
-
-      - run:
-          name: Install python
-          command: apt-get update && apt-get install -y python3 python3-pip && pip3 install -U pip
-
-      - run:
-          name: Install jupyter
-          command: pip3 install jupyter
-
-      - run:
-          name: Install firebase
-          command: yarn global add firebase-tools
-
-      - run:
-          name: Build app
-          command: yarn build
-
-      - run:
-          name: Deploy to firebase
-          command: yarn deploy --token=$FIREBASE_TOKEN --project $FIREBASE_PROJECT --non-interactive
-
 workflows:
   version: 2
   stack:
     jobs:
-      - build
-      - deploy:
-          requires:
-            - build
-          filters:
-            branches:
-              only:
-                - master
+      - test
