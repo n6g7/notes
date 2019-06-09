@@ -1,14 +1,11 @@
 {
   "version": 2,
   "name": "notes",
-  "alias": "notes.gnab.fr",
+  "alias": "theorem.space",
   "builds": [
     {
       "src": "package.json",
-      "use": "static-build-with-pip",
-      "config": {
-        "packages": ["jupyter"]
-      }
+      "use": "static-build-python"
     }
   ]
 }
