@@ -1,7 +1,7 @@
 {
   "version": 2,
   "name": "notes",
-  "alias": "notes.gnab.fr",
+  "alias": "theorem.space",
   "builds": [
     {
       "src": "package.json",

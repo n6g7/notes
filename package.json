@@ -5,7 +5,7 @@
   "author": "Nathan <nathan@gnab.fr>",
   "main": "src/index.js",
   "license": "MIT",
-  "homepage": "https://notes.gnab.fr",
+  "homepage": "https://theorem.space",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/n6g7/notes.git"
