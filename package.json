@@ -12,11 +12,11 @@
   },
   "scripts": {
     "build": "webpack --mode production",
-    "dev": "webpack-dev-server --config webpack.dev.config.js --mode development",
+    "dev": "pipenv run webpack-dev-server --config webpack.dev.config.js --mode development",
     "now-build": "yarn build",
     "pretest": "standard",
     "test": "jest",
-    "write": "cd notebooks && pipenv run jupyter notebook"
+    "write": "pipenv run jupyter lab --notebook-dir=./notebooks"
   },
   "bugs": {
     "url": "https://github.com/n6g7/notes/issues"

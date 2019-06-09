@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "317269bf9e721e9bf60760617a61ee0d6f7ac3e7a527549ce59457ee56d66b84"
+            "sha256": "c2c31d64e684f11f0577e0adc10c315cddee06282a059fd508adc6fa814f5456"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -152,6 +152,21 @@
                 "sha256:ba70754aa680300306c699790128f6fbd8c306ee5927976cbe48adacf240c0b7"
             ],
             "version": "==4.4.0"
+        },
+        "jupyterlab": {
+            "hashes": [
+                "sha256:0e47743c117609052ea75d211a85b2cad72b208f5fef664fab0c11afa1f5f0f7",
+                "sha256:2ec845845d51221e39d0d753884a19342c953f39febf3148a68631bf57ecb774"
+            ],
+            "index": "pypi",
+            "version": "==0.35.6"
+        },
+        "jupyterlab-server": {
+            "hashes": [
+                "sha256:65eaf85b27a37380329fbdd8ebd095a0bd65fe9261d73ef6a1abee1dbaeaac1f",
+                "sha256:72d916a73957a880cdb885def6d8664a6d1b2760ef5dca5ad665aa1e8d1bb783"
+            ],
+            "version": "==0.2.0"
         },
         "kiwisolver": {
             "hashes": [
@@ -383,8 +398,7 @@
         },
         "pyrsistent": {
             "hashes": [
-                "sha256:16692ee739d42cf5e39cef8d27649a8c1fdb7aa99887098f1460057c5eb75c3a",
-                "sha256:22838d998c6c9d07200879ecc64a541c9d0d7e6368928f48c05879cadafe1a04"
+                "sha256:16692ee739d42cf5e39cef8d27649a8c1fdb7aa99887098f1460057c5eb75c3a"
             ],
             "version": "==0.15.2"
         },
