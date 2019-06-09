@@ -11,7 +11,7 @@
     "url": "git+ssh://git@github.com/n6g7/notes.git"
   },
   "scripts": {
-    "build": "webpack --mode production",
+    "build": "pipenv run webpack --mode production",
     "dev": "pipenv run webpack-dev-server --config webpack.dev.config.js --mode development",
     "now-build": "yarn build",
     "pretest": "standard",
