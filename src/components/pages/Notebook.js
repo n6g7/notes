@@ -1,14 +1,15 @@
-import React, { PureComponent } from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import React, { PureComponent } from "react"
+import PropTypes from "prop-types"
+import styled from "styled-components"
 
-import notebooks from '@notebooks'
-import runMathjax from '@services/mathjax'
-import { Page } from '@templates'
+import notebooks from "@notebooks"
+import runMathjax from "@services/mathjax"
+import { Page } from "@templates"
 
 const NotebookPage = styled(Page)`
   .code_cell {
-    .input, .output {
+    .input,
+    .output {
       position: relative;
 
       .prompt {
@@ -24,7 +25,8 @@ const NotebookPage = styled(Page)`
         }
       }
 
-      pre, .output_png {
+      pre,
+      .output_png {
         border: 1px solid #cccccc;
         overflow: auto;
         padding: 0.5rem;
@@ -33,7 +35,8 @@ const NotebookPage = styled(Page)`
 
     @media (min-width: 60rem) {
       .input + .output_wrapper .output {
-        pre, .output_png {
+        pre,
+        .output_png {
           border-top: none;
           margin-top: -12px;
         }
@@ -77,44 +80,45 @@ const NotebookPage = styled(Page)`
 
 class Notebook extends PureComponent {
   static propTypes = {
-    match: PropTypes.object.isRequired
+    match: PropTypes.object.isRequired,
   }
 
   state = {
     loading: true,
-    html: null
+    html: null,
   }
 
-  update () {
+  update() {
     this.setState({ loading: true })
 
     notebooks[this.props.match.params.notebook]()
-      .then(({ default: html }) => this.setState({
-        loading: false,
-        html
-      }))
+      .then(({ default: html }) =>
+        this.setState({
+          loading: false,
+          html,
+        }),
+      )
       .then(() => runMathjax())
   }
 
-  componentDidMount () {
+  componentDidMount() {
     this.update()
   }
 
-  componentDidUpdate (prevProps) {
+  componentDidUpdate(prevProps) {
     if (prevProps.match.params.notebook !== this.props.match.params.notebook) {
       this.update()
     }
   }
 
-  render () {
+  render() {
     const { html, loading } = this.state
 
-    return <NotebookPage>
-      { loading
-        ? <p>Loading...</p>
-        : <div dangerouslySetInnerHTML={{__html: html}} />
-      }
-    </NotebookPage>
+    return (
+      <NotebookPage>
+        {loading ? <p>Loading...</p> : <div dangerouslySetInnerHTML={{ __html: html }} />}
+      </NotebookPage>
+    )
   }
 }
 
