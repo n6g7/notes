@@ -1,7 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import { Route, BrowserRouter } from "react-router-dom"
-import { ThemeProvider, createGlobalStyle } from "styled-components"
+import { ThemeProvider, createGlobalStyle, css } from "styled-components"
 import { AppContainer } from "react-hot-loader"
 
 import App from "./components/App"
@@ -22,6 +22,7 @@ const GlobalStyle = createGlobalStyle`
   h1, h2, h3, h4, h5, h6 {
     font-size: 1rem;
     font-weight: 900;
+    position: relative;
 
     .anchor-link {
       color: black;

@@ -1,6 +1,6 @@
 import React, { PureComponent } from "react"
 import PropTypes from "prop-types"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
 import { Header } from "@organisms"
 
@@ -13,9 +13,55 @@ const Main = styled.main`
 const Article = styled.article`
   width: 50rem;
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    &::before {
+      font-size: 0.9rem;
+      opacity: 0.4;
+      position: absolute;
+      right: calc(100% + 5px);
+      top: 0.05rem;
+    }
+  }
+
+  h1::before {
+    content: "#";
+  }
+  h2::before {
+    content: "##";
+  }
+  h3::before {
+    content: "###";
+  }
+  h4::before {
+    content: "####";
+  }
+  h5::before {
+    content: "#####";
+  }
+  h6::before {
+    content: "######";
+  }
+
   @media (max-width: 60rem) {
     padding: 0 1rem;
     width: 100%;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      &::before {
+        position: initial;
+        margin-right: 3px;
+      }
+    }
   }
 `
 
