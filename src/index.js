@@ -1,14 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Route, BrowserRouter } from 'react-router-dom'
-import { ThemeProvider, injectGlobal } from 'styled-components'
+import { ThemeProvider, createGlobalStyle } from 'styled-components'
 import { AppContainer } from 'react-hot-loader'
 
 import App from './components/App'
 import './style/hl.css'
 import theme from './theme'
 
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Zilla Slab', serif;
     margin: 0;
@@ -46,9 +46,12 @@ injectGlobal`
 ReactDOM.render(
   <AppContainer>
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
-        <Route component={App} />
-      </BrowserRouter>
+      <React.Fragment>
+        <GlobalStyle />
+        <BrowserRouter>
+          <Route component={App} />
+        </BrowserRouter>
+      </React.Fragment>
     </ThemeProvider>
   </AppContainer>,
   document.getElementById('app')
