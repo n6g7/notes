@@ -5,7 +5,6 @@ exports[`<Header /> renders well 1`] = `
   <styled.nav>
     <h1>
       <Link
-        replace={false}
         to="/"
       >
         notes
@@ -16,7 +15,6 @@ exports[`<Header /> renders well 1`] = `
         key="nb-accelerating-returns"
       >
         <Link
-          replace={false}
           to="/nb/accelerating-returns"
         >
           accelerating-returns
@@ -26,7 +24,6 @@ exports[`<Header /> renders well 1`] = `
         key="nb-bertrand"
       >
         <Link
-          replace={false}
           to="/nb/bertrand"
         >
           bertrand
@@ -36,7 +33,6 @@ exports[`<Header /> renders well 1`] = `
         key="nb-secretary"
       >
         <Link
-          replace={false}
           to="/nb/secretary"
         >
           secretary
@@ -46,7 +42,6 @@ exports[`<Header /> renders well 1`] = `
         key="nb-simulation"
       >
         <Link
-          replace={false}
           to="/nb/simulation"
         >
           simulation
@@ -56,7 +51,6 @@ exports[`<Header /> renders well 1`] = `
         key="nb-star-death"
       >
         <Link
-          replace={false}
           to="/nb/star-death"
         >
           star-death
