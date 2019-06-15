@@ -112,7 +112,7 @@ class Notebook extends PureComponent {
     return <NotebookPage>
       { loading
         ? <p>Loading...</p>
-        : <div dangerouslySetInnerHTML={{__html: html}} />
+        : <div dangerouslySetInnerHTML={{ __html: html }} />
       }
     </NotebookPage>
   }
