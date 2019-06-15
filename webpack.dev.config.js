@@ -4,6 +4,13 @@ const baseConfig = require('./webpack.config.js')
 
 module.exports = {
   ...baseConfig,
+  resolve: {
+    ...baseConfig.resolve,
+    alias: {
+      ...baseConfig.resolve.alias,
+      'react-dom': '@hot-loader/react-dom'
+    }
+  },
   plugins: [
     ...baseConfig.plugins,
     new webpack.NamedModulesPlugin(),
