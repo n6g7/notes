@@ -1,8 +1,8 @@
-import React, { PureComponent } from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import React, { PureComponent } from "react"
+import PropTypes from "prop-types"
+import styled from "styled-components"
 
-import { Header } from '@organisms'
+import { Header } from "@organisms"
 
 const Main = styled.main`
   align-items: center;
@@ -31,30 +31,32 @@ const Footer = styled.footer`
 
 class Page extends PureComponent {
   static propTypes = {
-    children: PropTypes.node.isRequired
+    children: PropTypes.node.isRequired,
   }
 
-  renderFooter () {
+  renderFooter() {
     const building = !!process.env.NOW_GITHUB_DEPLOYMENT
 
-    const commit = building ? process.env.NOW_GITHUB_COMMIT_SHA.substring(0, 6) : 'dev'
+    const commit = building ? process.env.NOW_GITHUB_COMMIT_SHA.substring(0, 6) : "dev"
     const url = building
       ? `https://github.com/${process.env.NOW_GITHUB_ORG}/${process.env.NOW_GITHUB_REPO}/tree/${process.env.NOW_GITHUB_COMMIT_SHA}`
-      : 'http://localhost:8080'
+      : "http://localhost:8080"
 
-    return <Footer>
-      <a href={url}>{commit}</a>
-    </Footer>
+    return (
+      <Footer>
+        <a href={url}>{commit}</a>
+      </Footer>
+    )
   }
 
-  render () {
-    return <Main {...this.props}>
-      <Header />
-      <Article>
-        {this.props.children}
-      </Article>
-      {this.renderFooter()}
-    </Main>
+  render() {
+    return (
+      <Main {...this.props}>
+        <Header />
+        <Article>{this.props.children}</Article>
+        {this.renderFooter()}
+      </Main>
+    )
   }
 }
 

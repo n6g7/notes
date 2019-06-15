@@ -1,14 +1,14 @@
-import React, { PureComponent } from 'react'
-import { Link } from 'react-router-dom'
-import styled from 'styled-components'
+import React, { PureComponent } from "react"
+import { Link } from "react-router-dom"
+import styled from "styled-components"
 
-import githubIcon from '@assets/github.svg'
-import notebooks from '@notebooks'
+import githubIcon from "@assets/github.svg"
+import notebooks from "@notebooks"
 
 const Container = styled.header`
   align-items: center;
   background: ${p => p.theme.colours.grey};
-  border-bottom: 1px solid #D9DCDF;
+  border-bottom: 1px solid #d9dcdf;
   display: flex;
   flex-flow: row nowrap;
   height: 3rem;
@@ -84,26 +84,28 @@ const Aside = styled.aside`
 `
 
 class Header extends PureComponent {
-  render () {
-    return <Container>
-      <Nav>
-        <h1>
-          <Link to='/'>notes</Link>
-        </h1>
-        <ul>
-          { Object.keys(notebooks).map(name =>
-            <li key={`nb-${name}`}>
-              <Link to={`/nb/${name}`}>{name}</Link>
-            </li>
-          )}
-        </ul>
-      </Nav>
-      <Aside>
-        <a href='https://github.com/n6g7/notes' title='GitHub repository' target='blank'>
-          <img src={githubIcon} alt='GitHub' />
-        </a>
-      </Aside>
-    </Container>
+  render() {
+    return (
+      <Container>
+        <Nav>
+          <h1>
+            <Link to="/">notes</Link>
+          </h1>
+          <ul>
+            {Object.keys(notebooks).map(name => (
+              <li key={`nb-${name}`}>
+                <Link to={`/nb/${name}`}>{name}</Link>
+              </li>
+            ))}
+          </ul>
+        </Nav>
+        <Aside>
+          <a href="https://github.com/n6g7/notes" title="GitHub repository" target="blank">
+            <img src={githubIcon} alt="GitHub" />
+          </a>
+        </Aside>
+      </Container>
+    )
   }
 }
 

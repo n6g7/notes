@@ -1,12 +1,12 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { Route, BrowserRouter } from 'react-router-dom'
-import { ThemeProvider, createGlobalStyle } from 'styled-components'
-import { AppContainer } from 'react-hot-loader'
+import React from "react"
+import ReactDOM from "react-dom"
+import { Route, BrowserRouter } from "react-router-dom"
+import { ThemeProvider, createGlobalStyle } from "styled-components"
+import { AppContainer } from "react-hot-loader"
 
-import App from './components/App'
-import './style/hl.css'
-import theme from './theme'
+import App from "./components/App"
+import "./style/hl.css"
+import theme from "./theme"
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -54,7 +54,7 @@ ReactDOM.render(
       </React.Fragment>
     </ThemeProvider>
   </AppContainer>,
-  document.getElementById('app')
+  document.getElementById("app"),
 )
 
 if (module.hot) module.hot.accept()
