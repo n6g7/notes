@@ -58,7 +58,7 @@
     "ipynb-loader": "^0.0.2",
     "jest": "^24.8.0",
     "prettier": "^1.18.2",
-    "react-hot-loader": "^4.12.2",
+    "react-hot-loader": "^4.12.3",
     "style-loader": "^0.23.1",
     "url-loader": "^2.0.1",
     "webpack": "^4.35.2",
