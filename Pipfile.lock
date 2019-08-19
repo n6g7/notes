@@ -96,10 +96,10 @@
         },
         "jedi": {
             "hashes": [
-                "sha256:0e4ba6cb008377b5a3c015a99ca007711f22fd69b8d5ff9c1f07673aed512adb",
-                "sha256:9f16cb00b2aee940df2efc1d7d7c848281fd16391536a3d4561f5aea49db1ee6"
+                "sha256:786b6c3d80e2f06fd77162a07fed81b8baa22dde5d62896a790a331d6ac21a27",
+                "sha256:ba859c74fa3c966a22f2aeebe1b74ee27e2a462f56d3f5f7ca4a59af61bfe42e"
             ],
-            "version": "==0.15.0"
+            "version": "==0.15.1"
         },
         "jinja2": {
             "hashes": [
@@ -154,18 +154,18 @@
         },
         "jupyterlab": {
             "hashes": [
-                "sha256:2d701b7ac3d2523397d8f856ae55bfe3f42db92fe20ee1e06cdaa26835f9209a",
-                "sha256:89260836abeee287516bd6d2c722e4299b1eed0d842df961c3a9976a9c0c9260"
+                "sha256:0b5fc77fcb9636a75b2302edb904d506dba873a24b0c151566d322a55cfe5066",
+                "sha256:905286f2608ff8a5595f9a941d46e7a8ff9c98a3dac6b88794f14a4563d65ced"
             ],
             "index": "pypi",
-            "version": "==1.0.5"
+            "version": "==1.0.6"
         },
         "jupyterlab-server": {
             "hashes": [
-                "sha256:08539970a024f5df4f90f8323d5b9a88f96ef8c84890aa497e3188db2b384274",
-                "sha256:a77e63ee8f93f77d03b5bcb9955ad0b4edda1e5c49d0b11fae6cc66cc1f41a1a"
+                "sha256:254da34d9895ccb618c30c0139911d46f57cea79f9767ebffe4846b6bc460fff",
+                "sha256:74f45573005f099ca0be672977cb1bff82e885852165504f74ac97a2fb313980"
             ],
-            "version": "==1.0.0"
+            "version": "==1.0.4"
         },
         "kiwisolver": {
             "hashes": [
@@ -434,10 +434,10 @@
         },
         "qtconsole": {
             "hashes": [
-                "sha256:6a85456af7a98b0f554d140922b7b6a219757b039adb2b95e847cf115eaa20ae",
-                "sha256:767eb9ec3f9943bc84270198b5ff95d2d86d68d6b57792fafa4df4fc6b16cd7c"
+                "sha256:0877c4c66cb4f102dc796dc63a08ddfa55a981c36a83690b45dee819d15c1a38",
+                "sha256:84b43391ad0a54d91a628dbcd95562651052ea20457a75af85a66fea35397950"
             ],
-            "version": "==4.5.2"
+            "version": "==4.5.3"
         },
         "send2trash": {
             "hashes": [
