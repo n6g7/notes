@@ -154,18 +154,18 @@
         },
         "jupyterlab": {
             "hashes": [
-                "sha256:0b5fc77fcb9636a75b2302edb904d506dba873a24b0c151566d322a55cfe5066",
-                "sha256:905286f2608ff8a5595f9a941d46e7a8ff9c98a3dac6b88794f14a4563d65ced"
+                "sha256:e8b6f058bc2ef8bf11fb742e170226fa5100c01ff57c0b37deb173ddd4a3f8c2",
+                "sha256:fbc86e7afb180542610d8da0f375ab049cbbe9b76dcddf8be4c69836d6a1fc43"
             ],
             "index": "pypi",
-            "version": "==1.0.6"
+            "version": "==1.0.9"
         },
         "jupyterlab-server": {
             "hashes": [
-                "sha256:254da34d9895ccb618c30c0139911d46f57cea79f9767ebffe4846b6bc460fff",
-                "sha256:74f45573005f099ca0be672977cb1bff82e885852165504f74ac97a2fb313980"
+                "sha256:d0977527bfce6f47c782cb6bf79d2c949ebe3f22ac695fa000b730c671445dad",
+                "sha256:d9c3bcf097f7ad8d8fd2f8d0c1e8a1b833671c02808e5f807088975495364447"
             ],
-            "version": "==1.0.4"
+            "version": "==1.0.6"
         },
         "kiwisolver": {
             "hashes": [
@@ -271,10 +271,10 @@
         },
         "notebook": {
             "hashes": [
-                "sha256:0be97e939cec73cde37fc4d2a606a6f497a9addf3afcf61a09a21b0c35e699c5",
-                "sha256:5c16dbf4fa824db19de43637ebfb24bcbd3b4f646e5d6a0414ed3a376d6bc951"
+                "sha256:660976fe4fe45c7aa55e04bf4bccb9f9566749ff637e9020af3422f9921f9a5d",
+                "sha256:b0a290f5cc7792d50a21bec62b3c221dd820bf00efa916ce9aeec4b5354bde20"
             ],
-            "version": "==6.0.0"
+            "version": "==6.0.1"
         },
         "numpy": {
             "hashes": [
