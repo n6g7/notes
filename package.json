@@ -60,7 +60,7 @@
     "prettier": "^1.18.2",
     "react-hot-loader": "^4.12.16",
     "style-loader": "^1.0.0",
-    "url-loader": "^2.2.0",
+    "url-loader": "^2.3.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
