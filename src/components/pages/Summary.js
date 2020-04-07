@@ -10,7 +10,7 @@ class Summary extends PureComponent {
       <Page>
         <h1>summary</h1>
         <ul>
-          {Object.keys(notebooks).map(notebook => (
+          {Object.keys(notebooks).map((notebook) => (
             <li key={`summary-${notebook}`}>
               <Link to={`/nb/${notebook}`}>{notebook}</Link>
             </li>

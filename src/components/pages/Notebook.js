@@ -49,7 +49,7 @@ const NotebookPage = styled(Page)`
   }
 
   blockquote {
-    background: ${p => p.theme.colours.grey};
+    background: ${(p) => p.theme.colours.grey};
     border-left: 0.3rem solid #ccc;
     padding: 0.5rem;
     padding-left: 2rem;
