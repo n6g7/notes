@@ -7,7 +7,7 @@ import notebooks from "@notebooks"
 
 const Container = styled.header`
   align-items: center;
-  background: ${p => p.theme.colours.grey};
+  background: ${(p) => p.theme.colours.grey};
   border-bottom: 1px solid #d9dcdf;
   display: flex;
   flex-flow: row nowrap;
@@ -92,7 +92,7 @@ class Header extends PureComponent {
             <Link to="/">notes</Link>
           </h1>
           <ul>
-            {Object.keys(notebooks).map(name => (
+            {Object.keys(notebooks).map((name) => (
               <li key={`nb-${name}`}>
                 <Link to={`/nb/${name}`}>{name}</Link>
               </li>
