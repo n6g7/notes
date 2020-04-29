@@ -45,7 +45,7 @@
     "@hot-loader/react-dom": "^16.13.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^9.0.0",
-    "babel-jest": "^24.9.0",
+    "babel-jest": "^25.5.0",
     "babel-loader": "^8.1.0",
     "babel-plugin-dynamic-import-node": "^2.3.3",
     "css-loader": "^3.5.3",
