@@ -117,17 +117,17 @@
     levenary "^1.1.1"
     semver "^5.5.0"
 
-"@babel/helper-create-class-features-plugin@^7.10.0", "@babel/helper-create-class-features-plugin@^7.8.3":
-  version "7.10.0"
-  resolved "https://registry.yarnpkg.com/@babel/helper-create-class-features-plugin/-/helper-create-class-features-plugin-7.10.0.tgz#3a2b7b86f6365ea4ac3837a49ec5791e65217944"
-  integrity sha512-n4tPJaI0iuLRayriXTQ8brP3fMA/fNmxpxswfNuhe4qXQbcCWzeAqm6SeR/KExIOcdCvOh/KkPQVgBsjcb0oqA==
+"@babel/helper-create-class-features-plugin@^7.10.1", "@babel/helper-create-class-features-plugin@^7.8.3":
+  version "7.10.1"
+  resolved "https://registry.yarnpkg.com/@babel/helper-create-class-features-plugin/-/helper-create-class-features-plugin-7.10.1.tgz#6d8a45aafe492378d0e6fc0b33e5dea132eae21c"
+  integrity sha512-bwhdehBJZt84HuPUcP1HaTLuc/EywVS8rc3FgsEPDcivg+DCW+SHuLHVkYOmcBA1ZfI+Z/oZjQc/+bPmIO7uAA==
   dependencies:
-    "@babel/helper-function-name" "^7.9.5"
-    "@babel/helper-member-expression-to-functions" "^7.10.0"
-    "@babel/helper-optimise-call-expression" "^7.10.0"
-    "@babel/helper-plugin-utils" "^7.8.3"
-    "@babel/helper-replace-supers" "^7.10.0"
-    "@babel/helper-split-export-declaration" "^7.8.3"
+    "@babel/helper-function-name" "^7.10.1"
+    "@babel/helper-member-expression-to-functions" "^7.10.1"
+    "@babel/helper-optimise-call-expression" "^7.10.1"
+    "@babel/helper-plugin-utils" "^7.10.1"
+    "@babel/helper-replace-supers" "^7.10.1"
+    "@babel/helper-split-export-declaration" "^7.10.1"
 
 "@babel/helper-create-regexp-features-plugin@^7.8.3":
   version "7.8.3"
@@ -211,12 +211,12 @@
   dependencies:
     "@babel/types" "^7.8.3"
 
-"@babel/helper-member-expression-to-functions@^7.10.0":
-  version "7.10.0"
-  resolved "https://registry.yarnpkg.com/@babel/helper-member-expression-to-functions/-/helper-member-expression-to-functions-7.10.0.tgz#e8cf57470bfd1247f2b41aa621a527e952efa6f1"
-  integrity sha512-xKLTpbMkJcvwEsDaTfs9h0IlfUiBLPFfybxaPpPPsQDsZTRg+UKh+86oK7sctHF3OUiRQkb10oS9MXSqgyV6/g==
+"@babel/helper-member-expression-to-functions@^7.10.1":
+  version "7.10.1"
+  resolved "https://registry.yarnpkg.com/@babel/helper-member-expression-to-functions/-/helper-member-expression-to-functions-7.10.1.tgz#432967fd7e12a4afef66c4687d4ca22bc0456f15"
+  integrity sha512-u7XLXeM2n50gb6PWJ9hoO5oO7JFPaZtrh35t8RqKLT1jFKj9IWeD1zrcrYp1q1qiZTdEarfDWfTIP8nGsu0h5g==
   dependencies:
-    "@babel/types" "^7.10.0"
+    "@babel/types" "^7.10.1"
 
 "@babel/helper-member-expression-to-functions@^7.8.3":
   version "7.8.3"
@@ -245,12 +245,12 @@
     "@babel/types" "^7.9.0"
     lodash "^4.17.13"
 
-"@babel/helper-optimise-call-expression@^7.10.0":
-  version "7.10.0"
-  resolved "https://registry.yarnpkg.com/@babel/helper-optimise-call-expression/-/helper-optimise-call-expression-7.10.0.tgz#6dcfb565842f43bed31b24f3e4277f18826e5e79"
-  integrity sha512-HgMd8QKA8wMJs5uK/DYKdyzJAEuGt1zyDp9wLMlMR6LitTQTHPUE+msC82ZsEDwq+U3/yHcIXIngRm9MS4IcIg==
+"@babel/helper-optimise-call-expression@^7.10.1":
+  version "7.10.1"
+  resolved "https://registry.yarnpkg.com/@babel/helper-optimise-call-expression/-/helper-optimise-call-expression-7.10.1.tgz#b4a1f2561870ce1247ceddb02a3860fa96d72543"
+  integrity sha512-a0DjNS1prnBsoKx83dP2falChcs7p3i8VMzdrSbfLhuQra/2ENC4sbri34dz/rWmDADsmF1q5GbfaXydh0Jbjg==
   dependencies:
-    "@babel/types" "^7.10.0"
+    "@babel/types" "^7.10.1"
 
 "@babel/helper-optimise-call-expression@^7.8.3":
   version "7.8.3"
@@ -282,15 +282,15 @@
     "@babel/traverse" "^7.8.3"
     "@babel/types" "^7.8.3"
 
-"@babel/helper-replace-supers@^7.10.0":
-  version "7.10.0"
-  resolved "https://registry.yarnpkg.com/@babel/helper-replace-supers/-/helper-replace-supers-7.10.0.tgz#26bc22ee1a35450934d2e2a9b27de10a22fac9d6"
-  integrity sha512-erl4iVeiANf14JszXP7b69bSrz3e3+qW09pVvEmTWwzRQEOoyb1WFlYCA8d/VjVZGYW8+nGpLh7swf9CifH5wg==
+"@babel/helper-replace-supers@^7.10.1":
+  version "7.10.1"
+  resolved "https://registry.yarnpkg.com/@babel/helper-replace-supers/-/helper-replace-supers-7.10.1.tgz#ec6859d20c5d8087f6a2dc4e014db7228975f13d"
+  integrity sha512-SOwJzEfpuQwInzzQJGjGaiG578UYmyi2Xw668klPWV5n07B73S0a9btjLk/52Mlcxa+5AdIYqws1KyXRfMoB7A==
   dependencies:
-    "@babel/helper-member-expression-to-functions" "^7.10.0"
-    "@babel/helper-optimise-call-expression" "^7.10.0"
-    "@babel/traverse" "^7.10.0"
-    "@babel/types" "^7.10.0"
+    "@babel/helper-member-expression-to-functions" "^7.10.1"
+    "@babel/helper-optimise-call-expression" "^7.10.1"
+    "@babel/traverse" "^7.10.1"
+    "@babel/types" "^7.10.1"
 
 "@babel/helper-replace-supers@^7.8.3":
   version "7.8.3"
@@ -408,14 +408,14 @@
     "@babel/helper-create-class-features-plugin" "^7.8.3"
     "@babel/helper-plugin-utils" "^7.8.3"
 
-"@babel/plugin-proposal-decorators@^7.10.0":
-  version "7.10.0"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-decorators/-/plugin-proposal-decorators-7.10.0.tgz#aa1c82288d9af1f2a5bc759e5dffbca8f8d01ea1"
-  integrity sha512-PTlxQfx0fZjOYlLe+gAhpb6Lph3zr03lpzqnzI8bWtcxDo/98rhO2adxe87F7OHg1G65nXxQ9ChPvB/0A3qSAg==
+"@babel/plugin-proposal-decorators@^7.10.1":
+  version "7.10.1"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-decorators/-/plugin-proposal-decorators-7.10.1.tgz#9373c2d8db45345c6e30452ad77b469758e5c8f7"
+  integrity sha512-xBfteh352MTke2U1NpclzMDmAmCdQ2fBZjhZQQfGTjXw6qcRYMkt528sA1U8o0ThDCSeuETXIj5bOGdxN+5gkw==
   dependencies:
-    "@babel/helper-create-class-features-plugin" "^7.10.0"
-    "@babel/helper-plugin-utils" "^7.8.3"
-    "@babel/plugin-syntax-decorators" "^7.8.3"
+    "@babel/helper-create-class-features-plugin" "^7.10.1"
+    "@babel/helper-plugin-utils" "^7.10.1"
+    "@babel/plugin-syntax-decorators" "^7.10.1"
 
 "@babel/plugin-proposal-dynamic-import@^7.8.3":
   version "7.8.3"
@@ -536,12 +536,12 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.8.3"
 
-"@babel/plugin-syntax-decorators@^7.8.3":
-  version "7.8.3"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-decorators/-/plugin-syntax-decorators-7.8.3.tgz#8d2c15a9f1af624b0025f961682a9d53d3001bda"
-  integrity sha512-8Hg4dNNT9/LcA1zQlfwuKR8BUc/if7Q7NkTam9sGTcJphLwpf2g4S42uhspQrIrR+dpzE0dtTqBVFoHl8GtnnQ==
+"@babel/plugin-syntax-decorators@^7.10.1":
+  version "7.10.1"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-decorators/-/plugin-syntax-decorators-7.10.1.tgz#16b869c4beafc9a442565147bda7ce0967bd4f13"
+  integrity sha512-a9OAbQhKOwSle1Vr0NJu/ISg1sPfdEkfRKWpgPuzhnWWzForou2gIeUIIwjAMHRekhhpJ7eulZlYs0H14Cbi+g==
   dependencies:
-    "@babel/helper-plugin-utils" "^7.8.3"
+    "@babel/helper-plugin-utils" "^7.10.1"
 
 "@babel/plugin-syntax-dynamic-import@^7.8.0", "@babel/plugin-syntax-dynamic-import@^7.8.3":
   version "7.8.3"
