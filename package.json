@@ -56,7 +56,7 @@
     "html-loader": "^1.1.0",
     "img-loader": "^2.0.1",
     "ipynb-loader": "^0.0.2",
-    "jest": "^26.0.1",
+    "jest": "^26.1.0",
     "prettier": "^2.0.5",
     "react-hot-loader": "^4.12.21",
     "style-loader": "^1.2.1",
